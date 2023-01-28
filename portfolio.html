@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mailto:uros.lazic.91.21@ict.edu.rs" />
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <meta name="copyright" content="..." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logo-transparent.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Wedia</title>
+  </head>
+  <body class="portfolio-bg">
+    <div class="dark-overlay-portfolio"></div>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <img src="img/logo-transparent.png" alt="" />
+    </div>
+    <!-- OVERLAY NAV -->
+    <div id="side-nav" class="d-lg-none">
+      <div class="container side-container">
+        <h1 class="text-center display-1 my-4">
+          <a
+            href="index.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Home
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-1 my-4">
+          <a
+            href="index.html#cover"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            About
+          </a>
+
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 my-4">
+          <a
+            href="contact.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Contact
+          </a>
+          <div class="underline"></div>
+        </h1>
+        <h1 class="text-center display-2 active my-4">
+          <a
+            href="portfolio.html"
+            class="text-white text-decoration-none text-uppercase primary-font"
+          >
+            Portfolio
+          </a>
+          <div class="underline"></div>
+        </h1>
+      </div>
+    </div>
+    <!-- <div class="dark-overlay"></div> -->
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark primary-font p-0 w-100 position-absolute"
+    >
+      <div class="container px-4">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo-transparent.png" alt="img"
+        /></a>
+        <button
+          class="navbar-toggler border-0 text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown-"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span
+            class="iconify burger text-white"
+            data-icon="ri:menu-3-line"
+          ></span> -->
+          <div id="burger-icon">
+            <div class="burger-line bl-1"></div>
+            <div class="burger-line bl-2"></div>
+            <div class="burger-line bl-3"></div>
+          </div>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-6 mx-3 fw-light"
+                aria-current="page"
+                href="index.html"
+                >Home
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 mx-3" href="index.html#cover"
+                >About
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-6 mx-3" href="contact.html"
+                >Contact
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-6 mx-3" href="portfolio.html"
+                >Portfolio
+                <div class="underline"></div
+              ></a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link mx-3 fs-6"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+                <span class="iconify" data-icon="dashicons:arrow-down"></span>
+                <div class="underline"></div>
+              </a>
+              <ul
+                class="dropdown-menu primary-font"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"> Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- PORTFOLIO -->
+    <!-- <div id="portfolio">
+      <div class="container">
+        <div class="row">
+          <h5 class="primary-font text-muted text-center">The portfolio</h5>
+          <h1 class="primary-font display-1 text-center text-white">
+            Past <span> projects</span>
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-1">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font yellow">Svetozar - Yugoslavia</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-2">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Saska Hajder - Plen</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-3">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Svetozar - Nespretni</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-4">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Svetozar - Mila</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-5">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-3">
+                  <h4 class="primary-font text-white">Severin - Demoni</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="text-decoration-none project-link">
+              <div class="portfolio-project position-relative pp-6">
+                <div class="gradient-overlay"></div>
+                <div class="project-play">
+                  <span
+                    class="iconify text-white display-5"
+                    data-icon="ion:play-sharp"
+                  ></span>
+                </div>
+                <div class="project-text position-relative p-4">
+                  <h4 class="primary-font text-white">Svetozar - Litar Krvi</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+   
+    <!-- <div class="neon"></div>
+    <div class="neon reverse"></div> -->
+    <!-- Swiper -->
+    <div id="swiper" class="container-fluid p-sm-0 py-3 overflow-hidden">
+      <div class="row">
+        <h5 class="primary-font text-muted text-center mb-0">The portfolio</h5>
+        <h1 class="primary-font display-1 text-center mb-0 text-white">
+          Past <span> projects</span>
+        </h1>
+        <div class="w-100 d-flex justify-content-center">
+          <img src="img/marker-3.png" class="w-150 mb-3" alt="marker" />
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/portfolio-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/portfolio-6.jpg" />
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="img/portfolio-7.jpg" />
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="img/portfolio-8.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next d-sm-none d-block"></div>
+        <div class="swiper-button-prev d-sm-none d-block"></div>
+      </div>
+    </div>
+    <!-- VIDEO PROJECTS -->
+    <div id="video-projects">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-2.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Severin - demoni"
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-3.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Saska hajder - Plen"
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-1.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Svetozar - Mila"
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-4.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                Nikola Milenkovic - Tra La La
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div><div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-5.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Svetozar - Senorita"
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <div class="p-xl-5 p-lg-4 p-md-3 p-2 portfolio-load">
+              <video
+                src="img/portfolio-video-6.mp4"
+                class="video-project w-100"
+                muted
+              ></video>
+              <h3 class="text-white primary-font d-inline me-3">
+                "Svetozar - Nespretni"
+              </h3>
+              <p class="text-light-muted secondary-font d-sm-inline d-block">
+                Video production & scenario
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="load">
+          <div class="row">
+          <p class="text-center" data-aos="fade-up">
+            <a
+              href="#"
+              class="text-white load-link text-center secondary-font text-decoration-none"
+              >Load More
+            </a>
+            <div class="underline-load"></div>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="p-sm-5 pb-sm-1 px-md-1 p-3 pb-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-3 footer-logo">
+            <img src="img/logo-transparent.png" alt="logo" />
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">QUICk LINKS</h3>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">home</a>
+            </p>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">about</a>
+            </p>
+            <p class="text-uppercase primary-font">
+              <a href="#" class="text-muted text-decoration-none">contact</a>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">INFORMATION</h3>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="gridicons:location"
+              ></span>
+              Milosa Pocerca 10
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span class="iconify-inline" data-icon="line-md:email"></span>
+              ognjen@gmail.com
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="carbon:phone-filled"
+              ></span>
+              069/1234-000
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h3 class="text-uppercase primary-font text-white">INFORMATION</h3>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="gridicons:location"
+              ></span>
+              Milosa Pocerca 10
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span class="iconify-inline" data-icon="line-md:email"></span>
+              ognjen@gmail.com
+            </p>
+            <p class="text-uppercase primary-font text-muted">
+              <span
+                class="iconify-inline"
+                data-icon="carbon:phone-filled"
+              ></span>
+              069/1234-000
+            </p>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <div class="row">
+          <div class="col-sm-6 social-footer">
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none">
+              <span
+                class="iconify"
+                data-icon="entypo-social:facebook"
+              ></span> </a
+            ><a href="#" class="text-white mx-2 text-decoration-none"
+              ><span class="iconify" data-icon="bi:youtube"></span>
+            </a>
+            <a href="#" class="text-white mx-2 text-decoration-none">
+              <span class="iconify" data-icon="el:linkedin"></span>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-end copyright text-muted primary-font">
+              &copy; <span id="year"></span> Wedia, All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
+    <script>
+      var myCarousel = document.querySelector("#carousel-slider");
+      //   var carousel = new bootstrap.Carousel(myCarousel, {
+      //     interval: 5000,
+      //     wrap: true,
+      //     pause: false,
+      //   });
+      AOS.init({ once: true });
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        loop: true,
+        pagination: false,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 100,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },1440: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+      var overlay = document.getElementById("preloader");
+      let date = new Date();
+      let year = date.getFullYear();
+      // console.log(year);
+      $("#year").text(year);
+      function dnone() {
+        $("#preloader").delay(3000).addClass("d-none");
+      }
+      $(window).on("load", function () {
+        $("#preloader").fadeOut();
+        $("#preloader").addClass("opacity-0", 2500);
+
+        $("#transition").fadeOut();
+      });
+      $(document).ready(function () {
+        
+        $(".portfolio-load").slice(0, 2).show();
+        if ($(".portfolio-load:hidden").length != 0) {
+          $("#load").fadeIn("slow");
+        }
+        $("#load").on("click", function (e) {
+          e.preventDefault();
+          $(".portfolio-load:hidden").slice(0, 2).fadeIn("slow");
+          if ($(".portfolio-load:hidden").length == 0) {
+            // $(".load-link").text("No More to view");
+            $("#load").hide();
+          }
+        });
+      });
+
+      $("#side-nav").hide();
+      $(".navbar-toggler").click(function () {
+        $(".bl-1").toggleClass("rotate-1", 1000, "easeOutSine");
+        $(".bl-3").toggleClass("rotate-2", 1000, "easeOutSine");
+        $(".bl-2").toggleClass("translate-1", 1000, "easeOutSine");
+        $("#side-nav").fadeToggle("fast", function () {
+          if ($(this).is(":visible")) $(this).css("display", "flex");$("body").toggleClass("vh-100");
+        });
+      });
+      // Getting video element using jQuery
+      var video = $(".video-project");
+
+      // Check if video is ready to play
+      $(video).on("canplay", function () {
+        $(video)
+          .mouseenter(function () {
+            $(this).get(0).play();
+          })
+          .mouseleave(function () {
+            $(this).get(0).pause();
+            $(this).get(0).currentTime = 0;
+          });
+      });
+    </script>
+  </body>
+</html>
